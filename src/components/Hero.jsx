@@ -1,6 +1,6 @@
 import React from "react";
 import myPic from '../assets/myPic.jpg'
-import DS from '../assets/DreamScapes.png'
+import DS from '../assets/DreamScapes.PNG'
 export default function Hero() {
 
 
