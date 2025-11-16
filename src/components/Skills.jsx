@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { easeIn, motion } from 'framer-motion';
 const tech = [
   { name: "React", pct: 95 },
   { name: "Node.js", pct: 92 },
@@ -41,7 +41,10 @@ const tools = [
   "CRUD Operations",
 ];
 
+
+
 export default function Skills() {
+  const [isInView, setIsInView] = useState(false);
   return (
     <section id="skills" className="py-16 sm:py-20">
       <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-12">
@@ -70,9 +73,16 @@ export default function Skills() {
                   <span className="text-xs text-gray-400">{t.pct}%</span>
                 </div>
                 <div className="w-full h-2 bg-gray-700/50 rounded-full overflow-hidden">
-                  <div
+                  <motion.div
                     className="h-2 rounded-full bg-gradient-to-r from-tealsoft to-indigo-500 transition-all duration-700"
-                    style={{ width: `${t.pct}%` }}
+                    initial={{ width: 0 }}
+                    animate={isInView?{ width: `${t.pct}%` }:{ width: 0 }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
+                    onViewportEnter={()=>setIsInView(true)}
+                    onViewportLeave={()=>setIsInView(false)}
+                    viewport={{amount:0.2}}
+
+
                   />
                 </div>
               </div>

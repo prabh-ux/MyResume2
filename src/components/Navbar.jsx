@@ -1,7 +1,9 @@
 import React from "react";
+import FadeIn from "../assets/FadeIn";
 
 export default function Navbar({ dark = true, setDark = () => {} }) {
   return (
+    
     <nav className="fixed w-full top-4 left-0 z-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between gap-3">
@@ -135,5 +137,6 @@ export default function Navbar({ dark = true, setDark = () => {} }) {
         </div>
       </div>
     </nav>
+
   );
 }

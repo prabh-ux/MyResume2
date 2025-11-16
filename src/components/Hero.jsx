@@ -1,6 +1,7 @@
 import React from "react";
 import myPic from '../assets/myPic.jpg'
 import DS from '../assets/DreamScapes.PNG'
+import FadeIn from "../assets/FadeIn";
 export default function Hero() {
 
 
@@ -8,6 +9,7 @@ export default function Hero() {
     <section id="hero" className="pt-28 pb-16 sm:pb-20">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
+        
           {/* LEFT: Photo + intro */}
           <div className="flex flex-col  items-center  gap-6">
             {/* Photo block */}
@@ -46,7 +48,7 @@ export default function Hero() {
             {/* Text content */}
             <div className="w-full text-center md:text-left">
 
-
+<FadeIn>
               <p className="mt-4 text-gray-300 font-bold max-w-xl mx-auto md:mx-0 text-sm sm:text-base text-center ">
                 Full-stack MERN developer — I build production-ready React frontends,
                 robust Express APIs, and scalable MongoDB backends with performance
@@ -67,7 +69,7 @@ export default function Hero() {
                   Hire Me
                 </a>
               </div>
-
+</FadeIn>
               <div className="mt-6 flex flex-col sm:flex-row gap-6 justify-center text-center text-xs sm:text-sm text-gray-400">
                 <div >
                   <div className="text-gray-500">Location</div>
@@ -143,6 +145,7 @@ href="#projects"
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
