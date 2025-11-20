@@ -6,12 +6,12 @@ export default function Navbar({ dark = true, setDark = () => {} }) {
     
     <nav className="fixed w-full top-4 left-0 z-50">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="flex items-center justify-between gap-3">
+        <div className="flex items-center justify-between gap-3 ">
           {/* Brand */}
           <a
             href="#hero"
             className="flex items-center gap-3 px-3 py-2 rounded-full
-                       bg-white/10 dark:bg-white/5 backdrop-blur-sm border border-white/10
+                        bg-white/10 backdrop-blur-md  border border-white/10
                        hover:scale-[1.02] transition-color duration-200 ease-out focus:outline-none focus:ring-2 focus:ring-teal-300"
             title="Home"
           >
@@ -30,7 +30,7 @@ export default function Navbar({ dark = true, setDark = () => {} }) {
 
           {/* Right side - desktop links */}
           <div className="hidden md:flex items-center gap-3 px-3 py-2 rounded-full
-                          bg-white/10 dark:bg-white/5 backdrop-blur-sm border border-white/10">
+                          bg-white/10 backdrop-blur-md  border border-white/10">
             <a
               href="#projects"
               className="text-sm text-gray-200 hover:text-white px-2 py-1 rounded-md transition-colors"
@@ -75,7 +75,7 @@ export default function Navbar({ dark = true, setDark = () => {} }) {
               href="#projects"
               title="Projects"
               aria-label="Projects"
-              className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-white/6 hover:bg-white/8 transition focus:outline-none focus:ring-2 focus:ring-teal-300"
+              className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-white/20 backdrop-blur-md hover:bg-white/15 transition focus:outline-none focus:ring-2 focus:ring-teal-300"
             >
               <svg className="w-5 h-5 text-slate-200" viewBox="0 0 24 24" fill="none" aria-hidden>
                 <path d="M3 7.5h18v9H3z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -88,7 +88,7 @@ export default function Navbar({ dark = true, setDark = () => {} }) {
               href="#skills"
               title="Skills"
               aria-label="Skills"
-              className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-white/6 hover:bg-white/8 transition focus:outline-none focus:ring-2 focus:ring-teal-300"
+              className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-white/20 backdrop-blur-md hover:bg-white/15  transition focus:outline-none focus:ring-2 focus:ring-teal-300"
             >
               <svg className="w-5 h-5 text-slate-200" viewBox="0 0 24 24" fill="none" aria-hidden>
                 <path d="M12 2v6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -101,7 +101,7 @@ export default function Navbar({ dark = true, setDark = () => {} }) {
               href="#contact"
               title="Contact"
               aria-label="Contact"
-              className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-white/6 hover:bg-white/8 transition focus:outline-none focus:ring-2 focus:ring-teal-300"
+              className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-white/20 backdrop-blur-md hover:bg-white/15  transition focus:outline-none focus:ring-2 focus:ring-teal-300"
             >
               <svg className="w-5 h-5 text-slate-200" viewBox="0 0 24 24" fill="none" aria-hidden>
                 <path d="M3 8l9 6 9-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -109,7 +109,7 @@ export default function Navbar({ dark = true, setDark = () => {} }) {
               </svg>
             </a>
 
-            {/* Dark Mode Toggle */}
+            {/* Dark Mode Toggle
             <button
               onClick={() => setDark(!dark)}
               aria-label="Toggle dark mode"
@@ -117,7 +117,7 @@ export default function Navbar({ dark = true, setDark = () => {} }) {
               className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-white/6 hover:bg-white/8 transition focus:outline-none focus:ring-2 focus:ring-teal-300"
             >
               {dark ? "🌙" : "☀️"}
-            </button>
+            </button> */}
 
             {/* Small resume icon */}
             <a
@@ -125,7 +125,7 @@ export default function Navbar({ dark = true, setDark = () => {} }) {
               download
               title="Resume"
               aria-label="Download resume"
-              className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-tealsoft text-indigo-500 hover:brightness-95 transition focus:outline-none focus:ring-2 focus:ring-teal-300"
+              className="inline-flex items-center justify-center w-9 h-9 rounded-md bg-tealsoft bg-indigo-400/30 backdrop-blur-md hover:bg-indigo-400/20 text-indigo-200 hover:brightness-95 transition focus:outline-none focus:ring-2 focus:ring-teal-300"
             >
               <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" aria-hidden>
                 <path d="M12 3v12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>

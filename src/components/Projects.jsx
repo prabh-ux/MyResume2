@@ -107,9 +107,9 @@ export default function Projects() {
             key={p.id}
             className="rounded-2xl p-5 sm:p-6 shadow-lg 
                        bg-white/10 dark:bg-white/5 backdrop-blur-sm border border-white/10
-                       hover:scale-105 hover:shadow-xl transition-transform duration-300"
+                       hover:scale-105 hover:shadow-xl transition-transform duration-300 "
           >
-            {p.img || p.img === "#" ? <img src={p.img} className="mb-4 h-36 flex items-center justify-center rounded-lg bg-white/5 text-gray-400 text-sm" />
+            {p.img || p.img === "#" ? <img loading="lazy" src={p.img} className="mb-4 h-36 flex items-center w-full justify-center rounded-lg bg-white/5 text-gray-400 text-sm object-cover  " />
               : <div className="mb-4 h-36 flex items-center justify-center rounded-lg bg-white/5 text-gray-400 text-sm">
                 Screenshot
               </div>

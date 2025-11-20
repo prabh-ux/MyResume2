@@ -29,6 +29,7 @@ export default function Hero() {
               >
                 <img
                   src={myPic}
+                  loading="lazy"
                   alt="Your Name"
                   onError={(e) => {
                     e.currentTarget.onerror = null;
@@ -106,6 +107,7 @@ export default function Hero() {
                   Project preview (screenshot)
                 </span> */}
                 <img
+                loading="lazy"
                   src={DS}
                   alt="Your Name"
                   onError={(e) => {

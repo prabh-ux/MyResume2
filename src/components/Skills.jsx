@@ -55,7 +55,7 @@ export default function Skills() {
         {/* Core */}
         <div
           className="rounded-2xl p-6 sm:p-8 shadow-lg
-                     bg-white/10 dark:bg-white/5 backdrop-blur-sm border border-white/10"
+                     bg-white/5  backdrop-blur-sm border border-white/10"
         >
           <h3 className="font-semibold text-lg mb-4">Core MERN & Web</h3>
           <p className="text-gray-300 text-sm sm:text-base mb-6">
@@ -63,7 +63,7 @@ export default function Skills() {
             scalable MongoDB schemas.
           </p>
 
-          <div className="space-y-5">
+          <div className="space-y-5 bg-">
             {tech.map((t) => (
               <div key={t.name}>
                 <div className="flex items-center justify-between mb-1">
