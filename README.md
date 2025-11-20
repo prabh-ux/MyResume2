@@ -1,16 +1,46 @@
-# React + Vite
+📄 Modern Resume Website (JS + Tailwind CSS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, responsive, and modern resume website built using JavaScript and Tailwind CSS.
+This project showcases my skills, experience, projects, and education in a minimal yet professional layout.
+Fully mobile-friendly and optimized for performance.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+⚡ Fast & lightweight – Pure JS + Tailwind, no heavy frameworks
 
-## React Compiler
+📱 Responsive design – Works smoothly on all devices
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🎨 Clean UI/UX with modern typography and spacing
 
-## Expanding the ESLint configuration
+🧩 Modular structure – Easy to update content
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+📑 Sections for:
+
+About
+
+Skills
+
+Projects
+
+Experience
+
+Education
+
+🛠️ Tech Stack Used
+
+JavaScript (ES6)
+
+Tailwind CSS
+
+HTML
+
+
+🧩 Live Demo
+
+Add link here → https://prabhkiratsinghresume.vercel.app/
+
+📌 Status
+
+✔️ Completed
+💡 Open to improvements and new UI additions
